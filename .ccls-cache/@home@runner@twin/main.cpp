@@ -577,7 +577,7 @@ int main(int argc,  char **argv) {
     cout << "collapse_seqs/" + file_name + ".txt" << endl;
     ofstream myfile("collapse_seqs/" + file_name + ".txt");
     for (Pair p : collapse_sequence) {
-        myfile << p.vertex1 << " " << p.vertex2 << endl;
+        myfile << p.vertex1 + 1 << " " << p.vertex2 + 1 << endl;
     }
     myfile.close();
     
